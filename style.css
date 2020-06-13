@@ -1,0 +1,14 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+    display : flex;
+    justify-content: flex-end;
+    width : 100%;
+}
+
+.js-weather {
+    margin : 20px;
+    font-size : 30px;
+}
