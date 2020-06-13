@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css"/>
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="inputstyle.css"/>
     <title>MY Momentum</title>
     <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -12,22 +13,29 @@
 <body>
     <!-- HEADER -->
     <header>
-        <span class="js-weather" ></span>
+        <div class="weather">
+            <span class="js-weather" ></span>
+            &#8451
+            <span class="js-location"></span>
+        </div>
     </header>
     <!-- VISUAL -->
     <section class="visual">
         <div class="container">
-            <div class="clock">
-                <h1>00 : 00</h1>
+            <div class="container_clock">
+                <h1 class="clock_title">00 : 00</h1>
             </div>
             <div class="toDoList">
-                <form action="" class="toDoListForm">
-                    <input type="text" placeholder="Today push your toDoList">
-                </form>
+                <div class="toDoList_input">
+                    <form action="" class="toDoListForm">
+                        <input type="text" name="todo" id="todo" placeholder="Enter your to do">
+                        <label for="todo">To do list?</label>
+                    </form>
+                </div>
                 <h3>I can do toDoList</h3>
-                <ul class="toDoList"></ul>
+                <ul class="toDoListPending"></ul>
                 <h3>Finished it!</h3>
-                <ul class="toDoList"></ul>    
+                <ul class="toDoListFinished"></ul>    
             </div>
         </div>
     </section>
