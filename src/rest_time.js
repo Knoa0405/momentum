@@ -21,8 +21,8 @@ function restTime() {
     const hours = date.getHours();
     const minutes = date.getMinutes();
     const second = date.getSeconds();
-    const restHours = fullHours - hours + 1;
-    const restMinute = fullMinutes - minutes + 1;
+    const restHours = fullHours - hours;
+    const restMinute = fullMinutes - minutes;
     const restSecond = fullSecond - second + 1;
     restTitle.innerText = `${
         restHours < 10 ?`0${restHours}`:restHours}\
