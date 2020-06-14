@@ -1,8 +1,7 @@
 const toDoListForm = document.querySelector(".toDoListForm"),
     input = toDoListForm.querySelector("#todo"),
     pendingList = document.querySelector(".toDoListPending"),
-    finishedList = document.querySelector(".toDoListFinished"),
-    ToDoList = document.querySelector(".toDoList");
+    finishedList = document.querySelector(".toDoListFinished");
 
 const PEND = "PENDING";
 const FINISHED = "FINISHED";
@@ -76,6 +75,7 @@ function loadListInfo(Key) {
                     createList(task.text);
                 });
             }
+            break;
         case "FINISHED" :
             const loadedFinInput = localStorage.getItem(Key);
             if (loadedFinInput !== null) {
@@ -84,6 +84,7 @@ function loadListInfo(Key) {
                     createFinList(task.text);
                 });
             }
+            break;
         default :
             break;
     }
@@ -104,8 +105,7 @@ function finList (e) {
     listOfPending = cleanStorage;
     saveToDoInStorage(PEND,listOfPending);
     // =========== del pending ================
-    const finishedListTitle = ToDoList.querySelector(".finishedIt");
-    finishedListTitle.style.display ="block";
+
     const span = li.querySelector("span");
     const textFromPend = span.innerText;
     createFinList(textFromPend);

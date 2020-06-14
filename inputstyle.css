@@ -13,8 +13,8 @@ label {
 label {
     transform : translate(-50%,50%) scale(1.3);
     position: absolute;
-    top : 38%;
-    left : 40%;
+    top : 46%;
+    left : 44%;
     cursor : text;
     transform-origin: left top;
     color : #757575;
@@ -37,7 +37,7 @@ input:not(:placeholder-shown) {
 }
 input:not(:placeholder-shown) ~ label,
 input:focus ~ label {
-    transform : translate(-100%, -60%) scale(0.8);
+    transform : translate(-100%, -60%) scale(0.75);
     padding-left: 10px;
     font-size : 20px;
     color: black;

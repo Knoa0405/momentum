@@ -33,12 +33,12 @@ header {
 }
 
 section {
-    width: 300px;
+    width: 500px;
     height : 400px;
     position : absolute;
     top: 50%;
     left : 50%;
-    margin : -100px 0px 0px -150px;
+    margin : -200px 0px 0px -250px;
 }
 .container {
     display:flex;
@@ -48,10 +48,15 @@ section {
 
 .container_clock {
     display : flex;
+    flex-flow: column;
+    align-items: center;
     margin-bottom : 10px;
 }
 .clock_title {
     font-size : 100px;
+}
+.rest_title {
+    font-size : 30px;
 }
 
 .toDoList{
@@ -63,10 +68,6 @@ section {
 .toDoList > h3 {
     font-size : 30px;
     margin-bottom: 10px;
-}
-
-.finishedIt {
-    display :none;
 }
 
 .toDoList > ul {
