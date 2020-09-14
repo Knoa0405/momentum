@@ -1,5 +1,5 @@
 const COORDINATES = "coordinates";
-const API_KEY = "5d89c497bb40c3ac4100a842fdd5c3ec";
+const API_KEY = "SECRET_KEY";
 const weather = document.querySelector(".js-weather");
 const localPlace = document.querySelector(".js-location");
 
